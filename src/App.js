@@ -54,8 +54,9 @@ function App() {
             </AppBar>
 
             <Box direction='row' flex overflow={{ horizontal: 'hidden' }}>
-              App body
-            </Box>
+              <Box flex align='center' justify='center'>
+                app body
+              </Box>
 
             { 
               ( !showSidebar || size !== 'small' ) ? (
@@ -96,6 +97,7 @@ function App() {
                 </Layer>
               )
           }
+          </Box>
           </Box>
         )}
       </ResponsiveContext.Consumer>
